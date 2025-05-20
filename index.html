@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rodolfo Sarkis - Desenvolvedor Frontend</title>
+
+  <link rel="stylesheet" href="src/css/font-awesome.css" />
+  <link rel="stylesheet" href="src/css/reset.css" />
+  
+  <!-- Global -->
+  <link rel="stylesheet" href="src/css/globais.css" />
+  <link rel="stylesheet" href="src/css/variaveis.css" />
+  <link rel="stylesheet" href="src/css/secoes/header.css" />
+  <link rel="stylesheet" href="src/css/secoes/home.css" />
+  <link rel="stylesheet" href="src/css/secoes/sobre.css" />
+  <link rel="stylesheet" href="src/css/secoes/habilidades.css" />
+  <link rel="stylesheet" href="src/css/secoes/projetos.css" />
+  <link rel="stylesheet" href="src/css/secoes/footer.css" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="row justify-content-between alinhar-itens-no-centro">
+        <a href="#">
+          <h1 class="logo">RS</h1>
+        </a>
+        <nav>
+          <input id="menu-hamburguer" type="checkbox" />
+
+          <label for="menu-hamburguer">
+            <div class="menu">
+              <span class="hamburguer"></span>
+            </div>
+          </label>
+          <ul>
+            <li><a href="#sobre-mim">Sobre mim</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#projetos">Meus projetos</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <section class="home">
+    <div class="container">
+      <div class="row full-screen alinhar-itens-no-centro">
+        <div class="texto-home">
+          <p>Olá 🖖,</p>
+          <h1>Sou o Rodolfo Sarkis</h1>
+          <h2>Desenvolvedor Frontend</h2>
+
+          <div class="redes-sociais">
+            <a target="_blank" href="https://www.linkedin.com/in/sarukisu/" class="outer-shadow"><i class="fab fa-linkedin-in"></i></a>
+            <a target="_blank" href="https://wa.me/5511913628354" class="outer-shadow"><i class="fab fa-whatsapp"></i></a>
+            <a target="_blank" href="https://github.com/Rodolfo-Sarkis" class="outer-shadow"><i class="fab fa-github"></i></a>
+            <a target="_blank" href="https://www.instagram.com/rodolforequiao?igsh=MWIxM2pic2hmMDV0MQ==" class="outer-shadow"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <div class="img-home">
+          <div class="img-box inner-shadow">
+            <img class="outer-shadow" src="src/imagens/Foto-Perfil.png" alt="foto do perfil do Rodolfo" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="sobre-mim section" id="sobre-mim">
+    <div class="container">
+      <div class="row">
+        <div class="section-title">
+          <h2>Sobre mim</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="imagem-sobre-mim">
+          <div class="img-box inner-shadow">
+            <img src="src/imagens/Foto-Perfil.png" alt="foto sobre mim" class="outer-shadow" />
+          </div>
+        </div>
+        <div class="informacoes-sobre-mim">
+          <p>
+            <strong>Olá! Me chamo Rodolfo Sarkis e sou um desenvolvedor frontend em
+              formação!</strong>
+              Gosto MUITO da área de tecnologia, e tenho certeza que posso contribuir em qualquer time com as minhas habilidades.
+          </p>
+
+          <p>
+           Estou sempre me desafiando com novos projetos e participando de comunidades de programação para buscar feedback de outros desenvolvedores e desenvolvedoras. Além de tentar ajudar essas pessoas com o que eu já aprendi. 😁
+          </p>
+
+          <p>
+            Ah, gosto de jogos, filmes, séries, animes e outras nerdices. 💜
+          </p>
+
+          <div class="botoes">
+            <a target="_blank" href="src/arquivos/curriculo.pdf" class="botao outer-shadow">Veja meu CV</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="habilidades section" id="habilidades">
+    <div class="container">
+      <div class="row">
+        <div class="section-title">
+          <h2>Habilidades</h2>
+        </div>
+      </div>
+
+      <div class="container-habilidades">
+        <div class="informacoes javascript">
+          <div class="logo">
+            <i class="devicon devicon-javascript-plain" id="javascript"></i>
+          </div>
+          <h3>JavaScript</h3>
+          <p>Tenho experiência sólida com JavaScript, incluindo manipulação do DOM, consumo de APIs, e criação de funcionalidades dinâmicas para interfaces web. Domino conceitos como funções, eventos, promises, async/await, e programação orientada a objetos. Também utilizo as melhores práticas para escrever um código limpo, eficiente e reutilizável.</p>
+        </div>
+
+        <div class="informacoes html">
+          <div class="logo">
+            <i class="devicon devicon-html5-plain-wordmark" id="html"></i>
+          </div>
+          <h3>HTML5</h3>
+          <p>Tenho experiência sólida com HTML, incluindo estruturação de páginas web semânticas, organização de conteúdo de forma acessível e otimização para SEO. Domino a criação de layouts responsivos e utilizo as melhores práticas para garantir um código limpo e eficiente.</p>
+        </div>
+
+        <div class="informacoes css">
+          <div class="logo">
+            <i class="devicon devicon-css3-plain-wordmark" id="css"></i>
+          </div>
+          <h3>CSS3</h3>
+          <p>Possuo habilidades avançadas em CSS, incluindo criação de layouts responsivos, estilização moderna com Flexbox e Grid, e implementação de animações para melhorar a experiência do usuário. Tenho experiência com design consistente, uso de variáveis CSS, otimização de desempenho e aplicação das melhores práticas para entregar interfaces atraentes e funcionais.</p>
+        </div>
+
+        <div class="informacoes github">
+          <div class="logo">
+            <i class="devicon devicon-github-original" id="github"></i>
+          </div>
+          <h3>GitHub</h3>
+          <p>Tenho experiência com GitHub, utilizando-o para versionamento de código, colaboração em equipe e gerenciamento de projetos. Domino práticas como criação e gerenciamento de branches, resolução de conflitos, utilização de pull requests e organização de repositórios. Sempre busco manter meus projetos bem documentados e organizados para facilitar o trabalho em equipe e o acompanhamento do desenvolvimento.</p>
+        </div>
+
+        <div class="informacoes git">
+          <div class="logo">
+            <i class="devicon devicon-git-plain" id="git"></i>
+          </div>
+          <h3>Git</h3>
+          <p>Tenho domínio do Git para controle de versão, incluindo comandos como clone, commit, push, pull e merge. Sou experiente na criação e gerenciamento de branches, resolução de conflitos, e navegação no histórico de commits. Utilizo o Git para organizar e rastrear mudanças no código, garantindo um desenvolvimento colaborativo eficiente e seguro.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="projetos section" id="projetos">
+    <div class="container">
+      <div class="row">
+        <div class="section-title">
+          <h2>Meus projetos</h2>
+        </div>
+      </div>
+
+      <div class="container-projetos">
+        <div class="projeto">        
+          <a target="_blank" href="https://rodolfo-sarkis.github.io/Fetch-GitHub-Api/">
+            <img src="src/imagens/ApiGitHub.png" alt="Fetch-GitHub-Api" />
+            <h3>Fetch-GitHub-Api</h3>
+            <div class="informacoes-projeto">          
+              <p>Projeto feito usando HTML, CSS e JavaScript</p>
+              <p>🔗 Ver no GitHub Pages</p>
+            </div>     
+          </a>
+        </div>
+
+        <div class="projeto">        
+          <a target="_blank" href="https://rodolfo-sarkis.github.io/Acordeon/">
+            <img src="src/imagens/Acordeon.png" alt="Acordeon" />
+            <h3>Acordeon</h3>
+            <div class="informacoes-projeto">          
+              <p>Projeto feito usando HTML, CSS e JavaScript</p>
+              <p>🔗 Ver no GitHub Pages</p>
+            </div>      
+          </a>          
+        </div>
+
+        <div class="projeto">     
+          <a target="_blank" href="https://rodolfo-sarkis.github.io/Meu-Primeiro-Freela/">
+            <img src="src/imagens/CancionNuevaCatolica.png" alt="Cancion Nueva Catolica" />
+            <h3>Meu Primeiro Freela</h3>
+            <div class="informacoes-projeto">
+              <p>Projeto feito usando HTML, CSS e JavaScript</p>
+              <p>🔗 Ver no GitHub Pages</p>
+            </div>
+          </a>   
+        </div>
+
+        <div class="projeto">
+          <a target="_blank" href="https://rodolfo-sarkis.github.io/App-gerador-de-conselhos-com-JavaScript/">
+            <img src="src/imagens/Conselhos.png" alt="Gerador de Conselhos" />
+            <h3>Gerador de Conselhos</h3>
+            <div class="informacoes-projeto">
+              <p>Projeto feito usando HTML, CSS e JavaScript</p>
+              <p>🔗 Ver no GitHub Pages</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <h2>Me envie uma mensagem!</h2>
+      <div class="redes-sociais">
+        <a target="_blank" href="https://www.linkedin.com/in/sarukisu/" class="outer-shadow"><i class="fab fa-linkedin-in"></i></a>
+        <a target="_blank" href="https://wa.me/5511913628354" class="outer-shadow"><i class="fab fa-whatsapp"></i></a>
+        <a target="_blank" href="https://github.com/Rodolfo-Sarkis" class="outer-shadow"><i class="fab fa-github"></i></a>
+        <a target="_blank" href="https://www.instagram.com/rodolforequiao?igsh=MWIxM2pic2hmMDV0MQ==" class="outer-shadow"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
