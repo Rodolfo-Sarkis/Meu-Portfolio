@@ -1,75 +1,111 @@
-/* PROJETOS */
+/* --- SEÇÃO PROJETOS --- */
+
 .projetos .container-projetos {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    /* Ajusta automaticamente a quantidade de colunas conforme o tamanho da tela */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 20px;
     justify-items: center;
 }
 
-
 .projeto {
+    position: relative;
     width: 100%;
     max-width: 350px;
+    height: 400px; /* Altura definida para manter o padrão dos cards */
+    border-radius: 8px;
+    overflow: hidden; /* Garante que nada saia para fora das bordas arredondadas */
+    background-color: var(--cor-fundo-escuro);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-
-
-@media(max-width: 1280px) { 
-    .projetos .container-projetos {
-        padding: 0 var(--mobile-padding);
-    }
-}
-
-.projetos .container-projetos .projeto {
-    border-radius: 5px;
-    transition: all 0.3s ease;
-    -moz-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    -webkit-transition: all .3s ease;
-    position: relative;            
-}
-
-.projetos .container-projetos .projeto:hover,
-.projetos .container-projetos .projeto:hover .informacoes-projeto {
-    opacity: 0.8;
-}
-
-.projetos .container-projetos .projeto img {
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+.projeto a {
+    display: block;
+    width: 100%;
     height: 100%;
+    text-decoration: none;
+    color: inherit;
+}
+
+.projeto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Faz a imagem preencher o card sem achatar */
+    transition: transform 0.5s ease;
+}
+
+/* --- TÍTULO (H3) E INFORMAÇÕES --- */
+
+.projetos .container-projetos .projeto h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Fundo escuro para leitura */
+    color: #fff;
+    font-size: 1.8rem;
+    padding: 15px;
+    margin: 0;
+    z-index: 2;
+    transition: opacity 0.3s ease;
+    opacity: 1; /* O título fica visível sobre a imagem inicialmente */
 }
 
 .projetos .container-projetos .projeto .informacoes-projeto {
-    padding: 20px 20px;    
-    background-color: var(--cor-fundo-escuro);
     position: absolute;
     top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    opacity: 0;    
-    transition: all .3s ease;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
+    background-color: var(--cor-fundo-escuro);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0; /* Escondido por padrão */
+    transition: all 0.4s ease;
+    z-index: 3;
 }
 
 .projetos .container-projetos .projeto .informacoes-projeto p:nth-child(2) {
     font-weight: 500;
-    margin-top: 10px;
-    font-size: 1.4rem;
+    margin-top: 15px;
+    font-size: 1.2rem;
+    color: var(--cor-primaria); /* Se tiver uma cor principal no seu tema */
 }
 
-.projetos .container-projetos .projeto h3 {
-    font-size: 2rem;
-    font-weight: 500;    
-    position: absolute;      
-    opacity: 0.7;
-    background-color: var(--cor-fundo-escuro);
-    width: 100%;
-    padding-left: 20px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    bottom: 0;
+/* --- EFEITO HOVER (PASSAR O MOUSE) --- */
+
+.projeto:hover img {
+    transform: scale(1.1); /* Zoom leve na imagem */
+}
+
+.projeto:hover h3 {
+    opacity: 0; /* Título some para dar lugar aos detalhes */
+}
+
+.projeto:hover .informacoes-projeto {
+    opacity: 1; /* Mostra os detalhes do projeto */
+}
+
+/* --- RESPONSIVIDADE (MOBILE) --- */
+
+@media (max-width: 768px) {
+    .projetos .container-projetos {
+        grid-template-columns: 1fr; /* Uma coluna apenas no celular */
+        padding: 0 20px;
+    }
+
+    .projeto {
+        max-width: 100%; /* Card ocupa a largura da tela */
+    }
+
+    /* No mobile, o título pode ficar sempre visível ou você pode manter o hover */
+    .projetos .container-projetos .projeto h3 {
+        font-size: 1.5rem;
+    }
 }
