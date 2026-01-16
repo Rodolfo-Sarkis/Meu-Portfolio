@@ -15,7 +15,7 @@
     position: relative;
     width: 100%;
     max-width: 350px;
-    height: 400px; /* Altura definida para manter o padrão dos cards */
+    height: auto;
     border-radius: 8px;
     overflow: hidden; /* Garante que nada saia para fora das bordas arredondadas */
     background-color: var(--cor-fundo-escuro);
@@ -32,8 +32,8 @@
 
 .projeto img {
     width: 100%;
-    height: 100%;
-    object-fit: cover; /* Faz a imagem preencher o card sem achatar */
+    height: auto;
+    display: block;
     transition: transform 0.5s ease;
 }
 
