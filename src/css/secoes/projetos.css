@@ -92,6 +92,160 @@
     opacity: 1; /* Mostra os detalhes do projeto */
 }
 
+.descricao {
+    margin-top: 5px;
+    font-size: 2rem;
+    color: var(--cor-texto);
+    text-align: center;
+    
+}
+
+/* --- TAGS --- */
+
+.tags {
+    display: flex;
+    justify-content: center; /* Centraliza as tags horizontalmente */
+    flex-wrap: wrap; /* Permite quebra de linha se necessário */
+    gap: 10px; /* Adiciona espaçamento entre as tags */
+    margin-top: 10px; /* Espaçamento acima das tags */
+    margin-bottom: 5px; 
+}
+
+.tags span {
+    background-color: var(--cor-primaria); /* Define a cor verde padrão do site */
+    color: #fff; /* Mantém o texto branco */
+    padding: 10px 15px; /* Ajusta o espaçamento interno para acompanhar o tamanho */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 1.6rem; /* Aumenta ainda mais o tamanho da fonte das tags */
+    pointer-events: none; /* Torna as tags não clicáveis */
+    margin-bottom: 5px;
+}
+
+/* --- BOTÕES --- */
+
+.botoes-projeto {
+    display: flex;
+    justify-content: center; /* Centraliza os botões */
+    gap: 15px; /* Espaçamento entre os botões */
+    margin-top: 10px; /* Espaçamento acima dos botões */
+}
+
+.botoes-projeto a {
+    background-color: var(--cor-primaria); /* Cor verde padrão do site */
+    color: #fff; /* Cor do texto */
+    padding: 8px 15px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    text-decoration: none; /* Remove o sublinhado */
+    font-size: 1.2rem; /* Tamanho da fonte */
+    transition: background-color 0.3s ease; /* Animação suave */
+}
+
+.botoes-projeto a:hover {
+    background-color: var(--cor-secundaria); /* Cor de destaque ao passar o mouse */
+}
+
+/* Estilização dos Links dos Projetos */
+.projeto-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.btn-link {
+    text-decoration: none;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 18px; /* Aumenta o tamanho interno dos botões */
+    border-radius: 5px;
+    font-size: 16px; /* Aumenta o tamanho da fonte */
+    font-weight: 500;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-link i {
+    font-size: 18px;
+}
+
+.btn-link:hover {
+    background-color: #fff;
+    color: #000;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Ajuste no card para garantir espaço */
+.projeto-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    /* Mantenha suas outras propriedades de card aqui */
+}
+
+/* --- TITULO SECAO --- */
+
+.projetos .titulo {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #fff; /* Define a cor do título como branco */
+}
+
+/* Estilização das Tags de Tecnologia */
+.tecnologias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 15px 0;
+}
+
+.tecnologias span {
+    background-color: #333; /* Cor de fundo da tag */
+    color: #43bd8e; /* Cor do texto (ajuste para combinar com seu tema) */
+    font-size: 0.75rem;
+    padding: 4px 10px;
+    border-radius: 20px;
+    border: 1px solid #43bd8e;
+    font-weight: bold;
+}
+
+/* Estilização dos Links/Botões */
+.projeto-links {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: auto; /* Empurra os botões para o final do card */
+    padding-top: 15px;
+}
+
+.btn-link {
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: 0.3s;
+}
+
+.btn-link:hover {
+    color: #00d2ff;
+    transform: scale(1.05);
+}
+
+.btn-link i {
+    font-size: 1.1rem;
+}
+
 /* --- RESPONSIVIDADE (MOBILE) --- */
 
 @media (max-width: 768px) {

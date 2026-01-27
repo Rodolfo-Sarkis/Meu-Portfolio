@@ -2,14 +2,15 @@
 .habilidades .container-habilidades {    
     text-align: center;    
     display: flex;
-    justify-content: center;    
-    flex-direction: row;
-    flex-wrap: wrap;
+    justify-content: space-evenly; /* Distribui os itens igualmente */
+    flex-wrap: wrap; /* Permite quebra de linha */
+    gap: 10px; /* Reduzi o espaçamento entre os itens para deixá-los mais juntos */
 }
 
 .habilidades .container-habilidades .informacoes{
+    flex: 1 1 calc(50% - 40px); /* Define largura para 2 itens por linha com espaçamento */
     max-width: 350px;
-    padding: 40px 20px;    
+    padding: 20px 10px; /* Reduzi o padding para compactar os itens */   
 }
 
 .habilidades .container-habilidades .informacoes p,

@@ -19,6 +19,7 @@
     max-width: 60%;
     padding: 0 25px;   
     align-self: center; 
+    text-align: center; /* Centraliza o texto horizontalmente */
 }
 
 .sobre-mim .informacoes-sobre-mim .botoes {
@@ -29,6 +30,10 @@
     font-size: 1.8rem;
     font-weight: 300;
     margin-bottom: 20px;
+}
+
+.sobre-mim .row {
+    justify-content: center; /* Centraliza o conteúdo da seção */
 }
 
 @media(max-width: 1280px) { 
