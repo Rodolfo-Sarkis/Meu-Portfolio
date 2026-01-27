@@ -159,9 +159,9 @@
     background-color: transparent;
     color: #fff;
     border: 1px solid #fff;
-    padding: 12px 18px; /* Aumenta o tamanho interno dos botões */
+    padding: 16px 24px; /* Aumenta o tamanho interno dos botões */
     border-radius: 5px;
-    font-size: 16px; /* Aumenta o tamanho da fonte */
+    font-size: 18px; /* Aumenta o tamanho da fonte */
     font-weight: 500;
     transition: all 0.3s ease;
     display: flex;
@@ -189,14 +189,20 @@
     /* Mantenha suas outras propriedades de card aqui */
 }
 
+.projeto-card p {
+    font-family: var(--fonte-primaria); /* Define a fonte padrão do site */
+    font-size: var(--fonte-normal); /* Define o tamanho padrão do site */
+    font-weight: 300; /* Define o peso padrão da fonte */
+}
+
 /* --- TITULO SECAO --- */
 
 .projetos .titulo {
+    font-size: var(--fonte-gigante);
+    font-weight: 500;
+    text-transform: uppercase;
     text-align: center;
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: #fff; /* Define a cor do título como branco */
+    margin-bottom: 40px;
 }
 
 /* Estilização das Tags de Tecnologia */
@@ -238,7 +244,7 @@
 }
 
 .btn-link:hover {
-    color: #00d2ff;
+    color: #43bd8e;
     transform: scale(1.05);
 }
 
